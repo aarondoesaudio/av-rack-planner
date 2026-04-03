@@ -143,6 +143,17 @@
   filter: brightness(1.1);
 }
 
+.cardBlank {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.18) 0,
+    rgba(0, 0, 0, 0.18) 2px,
+    transparent 0,
+    transparent 50%
+  ) !important;
+  background-size: 10px 10px !important;
+}
+
 .cardName {
   font-size: 12px;
   font-weight: 700;

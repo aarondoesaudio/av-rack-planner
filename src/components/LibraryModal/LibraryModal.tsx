@@ -35,7 +35,7 @@ export function LibraryModal({ onClose }: Props) {
         ruSize: entry.ruSize,
         color: entry.color,
         isHeat: entry.isHeat,
-        isBlank: false,
+        isBlank: entry.isBlank,
       },
     });
     // Flash "Added" feedback
@@ -107,7 +107,7 @@ export function LibraryModal({ onClose }: Props) {
             return (
               <button
                 key={i}
-                className={`${styles.card} ${added ? styles.cardAdded : ''}`}
+                className={`${styles.card} ${added ? styles.cardAdded : ''} ${entry.isBlank ? styles.cardBlank : ''}`}
                 style={{
                   backgroundColor: entry.color,
                   height: h,
