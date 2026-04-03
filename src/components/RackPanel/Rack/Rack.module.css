@@ -1,0 +1,39 @@
+.rackOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.rackFrame {
+  position: relative;
+  background: #111;
+  border: 3px solid #555;
+  border-radius: 3px;
+  margin: 0 28px; /* space for RU numbers on each side */
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4);
+  overflow: visible;
+}
+
+.slotsContainer {
+  position: relative;
+  width: 100%;
+}
+
+/* Gear items float over the slots via absolute positioning */
+.gearLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.gearWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: all;
+  padding: 1px 2px;
+  box-sizing: border-box;
+}

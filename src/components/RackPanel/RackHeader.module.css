@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 8px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f0f0f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.location {
+  font-size: 11px;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heightLabel {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.05em;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.editBtn {
+  background: transparent;
+  border: 1px solid rgba(99, 179, 237, 0.35);
+  color: rgba(99, 179, 237, 0.7);
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.editBtn:hover {
+  background: rgba(99, 179, 237, 0.12);
+  color: #63b3ed;
+  border-color: rgba(99, 179, 237, 0.65);
+}
+
+.deleteBtn {
+  background: transparent;
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  color: rgba(220, 38, 38, 0.7);
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.deleteBtn:hover {
+  background: rgba(220, 38, 38, 0.15);
+  color: rgba(220, 38, 38, 1);
+  border-color: rgba(220, 38, 38, 0.7);
+}

@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #141414;
+  color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  html, body, #root {
+    height: auto;
+    overflow: visible;
+    background: white !important;
+  }
+
+  body {
+    color: #111 !important;
+  }
+
+  /* White page background (rack backgrounds are set on the rack elements and stay dark) */
+  [class*="app"] {
+    background: white !important;
+  }
+
+  /* Hide UI chrome */
+  .toolbar,
+  [class*="Toolbar"],
+  [class*="toolbar"] {
+    display: none !important;
+  }
+
+  /* Hide the Available Gear / waiting area */
+  [class*="WaitingArea"],
+  [class*="waitingArea"] {
+    display: none !important;
+  }
+
+  /*
+   * zoom: 0.6 makes the canvas "see" a virtual width of ~1200px on letter paper
+   * (720px usable / 0.6 = 1200px), which fits two 540px racks side-by-side
+   * without re-wrapping them into single-rack rows.
+   */
+  [class*="canvas"] {
+    overflow: visible !important;
+    padding: 24px !important;
+    zoom: 0.6;
+  }
+}

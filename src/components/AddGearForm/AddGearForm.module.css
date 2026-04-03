@@ -1,0 +1,110 @@
+.form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 9px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #eee;
+  padding: 4px 7px;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.15s;
+  height: 28px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: rgba(99, 179, 237, 0.6);
+}
+
+.nameInput {
+  width: 130px;
+}
+
+.ruInput {
+  width: 46px;
+  text-align: center;
+}
+
+.colorInput {
+  width: 36px;
+  height: 28px;
+  padding: 2px 2px;
+  cursor: pointer;
+}
+
+.checkRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #bbb;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.checkLabel input {
+  width: 13px;
+  height: 13px;
+  accent-color: #63b3ed;
+  cursor: pointer;
+}
+
+.addBtn {
+  background: rgba(99, 179, 237, 0.2);
+  border: 1px solid rgba(99, 179, 237, 0.4);
+  color: #63b3ed;
+  border-radius: 4px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.addBtn:hover {
+  background: rgba(99, 179, 237, 0.3);
+  border-color: rgba(99, 179, 237, 0.7);
+}
+
+.addBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.uLabel {
+  font-size: 11px;
+  color: #777;
+  margin-left: -3px;
+  white-space: nowrap;
+}

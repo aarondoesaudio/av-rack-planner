@@ -1,0 +1,15 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  /* 484px inner frame + 28px RU labels on each side = 540px */
+  width: 540px;
+  min-width: 540px;
+}
+
+@media print {
+  .panel {
+    /* Keep each rack whole on the page; browser overrides for racks taller than a page */
+    break-inside: avoid;
+  }
+}
